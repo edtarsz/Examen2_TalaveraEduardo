@@ -13,6 +13,9 @@
         android:theme="@style/Theme.Examen2_TalaveraEduardo"
         tools:targetApi="31">
         <activity
+            android:name=".Llamada"
+            android:exported="false" />
+        <activity
             android:name=".AgendaContactos"
             android:exported="true">
             <intent-filter>

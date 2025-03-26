@@ -3,7 +3,6 @@ package com.example.examen2_talaveraeduardo
 import android.annotation.SuppressLint
 import android.content.Context
 import android.content.Intent
-import android.graphics.Color
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -155,19 +154,14 @@ class ContactoAdapter : BaseAdapter {
 
         if (context != null) {
             when (contacto.color) {
-                1 -> circulo.setBackgroundColor(ContextCompat.getColor(context!!, R.color.random1))
-                2 -> circulo.setBackgroundColor(ContextCompat.getColor(context!!, R.color.random2))
-                3 -> circulo.setBackgroundColor(ContextCompat.getColor(context!!, R.color.random3))
-                4 -> circulo.setBackgroundColor(ContextCompat.getColor(context!!, R.color.random4))
-                5 -> circulo.setBackgroundColor(ContextCompat.getColor(context!!, R.color.random5))
-                6 -> circulo.setBackgroundColor(ContextCompat.getColor(context!!, R.color.random6))
-                7 -> circulo.setBackgroundColor(ContextCompat.getColor(context!!, R.color.random7))
-                else -> circulo.setBackgroundColor(
-                    ContextCompat.getColor(
-                        context!!,
-                        R.color.random8
-                    )
-                )
+                1 -> circulo.setBackgroundResource(R.color.random1)
+                2 -> circulo.setBackgroundResource(R.color.random2)
+                3 -> circulo.setBackgroundResource(R.color.random3)
+                4 -> circulo.setBackgroundResource(R.color.random4)
+                5 -> circulo.setBackgroundResource(R.color.random5)
+                6 -> circulo.setBackgroundResource(R.color.random6)
+                7 -> circulo.setBackgroundResource(R.color.random7)
+                else -> circulo.setBackgroundResource(R.color.random8)
             }
         }
 

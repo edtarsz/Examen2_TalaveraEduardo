@@ -54,9 +54,29 @@
         android:textSize="20sp" />
 
     <Button
+        android:id="@+id/btnLlamar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="150dp"
         android:text="Llamar a nombre" />
+
+    <LinearLayout
+        android:id="@+id/containerbtns"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:visibility="gone"
+            android:id="@+id/btnColgar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/random6"
+            android:src="@drawable/phone_off"
+            android:text="Llamar a nombre" />
+
+    </LinearLayout>
 </LinearLayout>
